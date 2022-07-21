@@ -1,0 +1,17 @@
+/* Write a Java Program for GUI Frame */
+import java.awt.*;
+
+class frameTest extends Frame{
+    frameTest(){
+        setVisible(true);
+        setSize(300,500);
+        setBackground(Color.DARK_GRAY);
+        setTitle("Computer Learning Hub");
+    }
+}
+class AwtTest{
+    public static void main(String[] args) {
+       
+        frameTest f = new frameTest();
+    }
+}
