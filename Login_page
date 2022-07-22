@@ -1,0 +1,50 @@
+/* Create a Login page Using Java Program*/
+import java.awt.*;
+
+class LoginPage extends Frame {
+   Frame f;
+   Label l1,l2;
+   TextField t1,t2;
+   Button b1,b2;
+    LoginPage(){
+        f=new Frame();
+
+        l1 = new Label("User Name");
+        l2 = new Label("Password");
+        t1 = new TextField(10);
+        t2 = new TextField(10);
+        b1 = new Button("Login");
+        b2 = new Button("Cancle");
+
+        l1.setSize(100,30);
+        l2.setSize(100,30);
+        t1.setSize(160,30);
+        t2.setSize(160,30);
+        b1.setSize(100,40);
+        b2.setSize(100,40);
+
+        l1.setLocation(100,100);
+        l2.setLocation(100,200);
+        t1.setLocation(230,100);
+        t2.setLocation(230,200);
+        b1.setLocation(130,280);
+        b2.setLocation(280,280);
+
+        f.add(l1);
+        f.add(l2);
+        f.add(t1);
+        f.add(t2);
+        f.add(b1);
+        f.add(b2);
+
+        f.setLayout(null);
+        f.setVisible(true);
+        f.setSize(500,400);
+        f.setTitle("Login Page");
+        f.setLocation(550,200);
+        f.setBackground(Color.MAGENTA);
+    }
+    public static void main(String[] args) {
+        new LoginPage();
+    } 
+}
