@@ -1,0 +1,23 @@
+/* Write a Java Program to abstract methods and abstract class example */
+
+abstract class Test{
+    abstract public void setStart();
+}
+class Car extends Test{
+    public void setStart(){
+        System.out.println("Start With Key");
+    }
+}
+class scoter extends Test{
+    public void setStart(){
+        System.out.println("Start with kick and Self");
+    }
+}
+class AbstractTest{
+    public static void main(String[] args) {
+        scoter s = new scoter();
+        s.setStart();
+        Car c = new Car();
+        c.setStart();
+    }
+}
